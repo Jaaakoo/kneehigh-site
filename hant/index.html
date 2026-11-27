@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小板凳 · Kneehigh — 聽家裡的老人講過去</title>
+<meta name="description" content="春節回家，搬個小板凳坐在老人身邊，把他們的故事錄下來。">
+<meta name="theme-color" content="#f5eee2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1d1814" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6838535341">
+<meta property="og:title" content="小板凳 · Kneehigh">
+<meta property="og:description" content="春節回家，搬個小板凳坐在老人身邊，把他們的故事錄下來。">
+<meta property="og:image" content="https://kneehigh.uzumea.com/img/og.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://kneehigh.uzumea.com/hant/">
+<link rel="alternate" hreflang="zh-Hans" href="https://kneehigh.uzumea.com/">
+<link rel="alternate" hreflang="zh-Hant" href="https://kneehigh.uzumea.com/hant/">
+<link rel="alternate" hreflang="en" href="https://kneehigh.uzumea.com/en/">
+<link rel="alternate" hreflang="ja" href="https://kneehigh.uzumea.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://kneehigh.uzumea.com/ko/">
+<link rel="alternate" hreflang="vi" href="https://kneehigh.uzumea.com/vi/">
+<link rel="alternate" hreflang="th" href="https://kneehigh.uzumea.com/th/">
+<link rel="alternate" hreflang="id" href="https://kneehigh.uzumea.com/id/">
+<link rel="alternate" hreflang="ms" href="https://kneehigh.uzumea.com/ms/">
+<link rel="alternate" hreflang="es" href="https://kneehigh.uzumea.com/es/">
+<link rel="alternate" hreflang="fr" href="https://kneehigh.uzumea.com/fr/">
+<link rel="alternate" hreflang="de" href="https://kneehigh.uzumea.com/de/">
+<link rel="alternate" hreflang="it" href="https://kneehigh.uzumea.com/it/">
+<link rel="alternate" hreflang="pt" href="https://kneehigh.uzumea.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://kneehigh.uzumea.com/en/">
+<link rel="icon" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap">
+<style>:root{--serif:'Noto Serif TC','Songti TC',serif}
+:root {
+  color-scheme: light dark;
+  --paper: #f5eee2;
+  --paper2: #efe5d4;
+  --shotbg: #f4ede1;
+  --ink: #2b2420;
+  --muted: #8a6f5a;
+  --line: rgba(80, 50, 20, 0.14);
+  --red: #c8302a;
+  --btn: #2b2420;
+  --btnink: #fbf6ec;
+  --sans: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', 'Apple SD Gothic Neo', 'Noto Sans', 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #1d1814;
+    --paper2: #26201b;
+    --ink: #f1e8da;
+    --muted: #b59d86;
+    --line: rgba(255, 235, 210, 0.12);
+    --red: #e0553f;
+    --btn: #f1e8da;
+    --btnink: #1d1814;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background-color: var(--paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color: var(--ink);
+  font: 17px/1.75 var(--sans);
+  overflow-x: hidden;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+h1, h2, .intro, .tag { font-family: var(--serif); font-weight: 700; }
+
+/* top bar */
+.top {
+  max-width: 1080px; margin: 0 auto; padding: 18px 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.mark { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; font-size: 15px; min-width: 0; }
+.mark:hover { text-decoration: none; }
+.mark img { border-radius: 8px; flex: none; box-shadow: 0 1px 3px rgba(60, 30, 10, 0.2); }
+.mark span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.langs { position: relative; flex: none; }
+.langs summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px;
+  padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; color: var(--muted);
+}
+.langs summary::-webkit-details-marker { display: none; }
+.langs nav {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 5; width: 210px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 6px;
+  box-shadow: 0 14px 34px rgba(60, 30, 10, 0.18);
+}
+.langs nav a { display: block; padding: 8px 12px; border-radius: 9px; color: var(--ink); font-size: 15px; }
+.langs nav a:hover { background: var(--paper2); text-decoration: none; }
+.langs nav a[aria-current] { color: var(--red); font-weight: 600; }
+
+main { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* pictures: the store screenshots, phone and all */
+.pic { display: flex; justify-content: center; }
+.shot { width: 100%; max-width: 290px; height: auto; display: block; filter: drop-shadow(0 24px 32px rgba(60, 35, 15, 0.2)); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; padding: 40px 0 72px; }
+.hero h1 { font-size: clamp(44px, 7vw, 72px); line-height: 1.1; margin: 6px 0 10px; letter-spacing: 0.02em; }
+.l-zh .hero h1, .l-hant .hero h1 { letter-spacing: 0.12em; }
+.hero .tag { font-size: clamp(20px, 2.6vw, 26px); line-height: 1.4; margin: 0 0 22px; color: var(--muted); font-weight: 500; }
+.hero .lede { font-size: 18px; max-width: 30em; margin: 0 0 30px; }
+.hero-pal { margin-left: -8px; }
+.store {
+  display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px 13px 20px;
+  background: var(--btn); color: var(--btnink); border-radius: 14px; font-weight: 600; font-size: 16px;
+}
+.store:hover { text-decoration: none; opacity: 0.92; }
+.store.soon { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+.note { font-size: 14px; color: var(--muted); margin: 12px 0 0; }
+
+.intro {
+  font-size: clamp(22px, 3vw, 30px); line-height: 1.6; font-weight: 500; text-align: center;
+  max-width: 24em; margin: 0 auto; padding: 56px 0 72px; border-top: 1px solid var(--line);
+}
+.intro::before { content: ''; display: block; width: 32px; height: 3px; background: var(--red); border-radius: 2px; margin: 0 auto 28px; }
+
+/* features, like issues of a family magazine */
+.feat { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 64px 0; border-top: 1px solid var(--line); }
+.feat.flip .txt { order: 2; }
+.eyebrow { font-size: 13px; letter-spacing: 0.12em; color: var(--red); font-weight: 600; margin: 0 0 14px; text-transform: uppercase; }
+.eyebrow .no { font-family: var(--serif); font-size: 15px; color: var(--muted); margin-right: 12px; letter-spacing: 0; }
+.feat h2, .own h2, .pals h2 { font-size: clamp(30px, 4vw, 42px); line-height: 1.25; margin: 0 0 8px; }
+.sub { font-size: 19px; color: var(--muted); margin: 0 0 26px; }
+.feat ul { list-style: none; padding: 0; margin: 0; }
+.feat li { position: relative; padding: 0 0 12px 22px; }
+.feat li::before { content: ''; position: absolute; left: 2px; top: 0.75em; width: 8px; height: 8px; border-radius: 2px; background: var(--red); transform: rotate(45deg); opacity: 0.85; }
+.feat.plus .txt { background: var(--paper2); border-radius: 22px; padding: 30px 30px 20px; }
+
+/* privacy */
+.own { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 64px 0; border-top: 1px solid var(--line); }
+.own p { font-size: 19px; margin: 0 0 10px; }
+.own p + p { font-family: var(--serif); font-weight: 700; color: var(--red); font-size: 21px; }
+
+/* the companions */
+.pals { text-align: center; padding: 72px 0 40px; border-top: 1px solid var(--line); }
+.pals .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; margin-top: 30px; }
+.pals .row span { display: block; }
+.pals .row .mascot .m-body, .pals .row .mascot .m-rock { animation-delay: var(--d) !important; }
+.end { text-align: center; padding: 20px 0 80px; }
+
+footer { border-top: 1px solid var(--line); padding: 36px 20px 48px; text-align: center; font-size: 14px; color: var(--muted); }
+footer p { margin: 0 0 8px; }
+footer .flat { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; max-width: 760px; margin: 18px auto 0; }
+footer .flat a { color: var(--muted); }
+footer .flat a[aria-current] { color: var(--ink); }
+
+/* 凳凳 and friends (same drawing and motion as in the app) */
+.mascot { overflow: visible; display: block; }
+.mascot .m-shadow { fill: rgba(60, 30, 10, 0.12); }
+.mascot .m-pp { filter: drop-shadow(0 3px 3px rgba(60, 30, 10, 0.25)); }
+.mascot .m-red { fill: #c8302a; }
+.mascot .m-rung { fill: #a52520; }
+.mascot .m-cut { fill: #f8efe0; }
+.mascot .m-shine { opacity: 0.5; }
+.mascot .m-cheek { fill: #f08a7e; }
+.mascot .m-smile { fill: none; stroke: #f8efe0; stroke-width: 4; stroke-linecap: round; }
+.mascot .m-leg1 { transform-origin: 70px 112px; }
+.mascot .m-leg2 { transform-origin: 130px 112px; }
+.mascot.wave .m-body { animation: m-hop 1.4s ease-in-out infinite; transform-origin: 100px 170px; }
+.mascot.wave .m-leg1 { animation: m-legA 0.7s ease-in-out infinite alternate; }
+.mascot.wave .m-leg2 { animation: m-legB 0.7s ease-in-out infinite alternate; }
+.mascot .m-blink { animation: m-blink 4s infinite; transform-box: fill-box; transform-origin: center; }
+.mascot.wave .m-rock { animation: m-rock 1.4s ease-in-out infinite alternate; transform-origin: 100px 165px; }
+@keyframes m-hop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px) rotate(-2deg); } }
+@keyframes m-legA { from { transform: rotate(8deg); } to { transform: rotate(-8deg); } }
+@keyframes m-legB { from { transform: rotate(-8deg); } to { transform: rotate(8deg); } }
+@keyframes m-rock { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+@keyframes m-blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.1); } }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .shot { filter: drop-shadow(0 0 1px rgba(255, 240, 220, 0.5)) drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5)); }
+}
+@media (prefers-reduced-motion: reduce) { .mascot * { animation: none !important; } }
+
+/* phones */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .hero, .feat, .own { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding: 16px 0 48px; text-align: center; }
+  .hero-pal { margin: 0 auto; }
+  .hero .lede { margin-left: auto; margin-right: auto; }
+  .feat.flip .txt { order: 0; }
+  .feat, .own { padding: 48px 0; }
+  .own .pic { order: 2; }
+  .shot { max-width: 260px; }
+  .intro { padding: 44px 4px 52px; }
+  .feat.plus .txt { padding: 24px 20px 14px; }
+  .pals .row svg { width: 60px; height: 60px; }
+}
+</style>
+</head>
+<body class="l-hant">
+<header class="top">
+  <a class="mark" href="../hant/"><img src="../img/icon-256.webp" width="32" height="32" alt=""><span>小板凳 · Kneehigh</span></a>
+  <details class="langs"><summary aria-label="語言"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.8 3.8 5.8 3.8 9s-1.2 6.2-3.8 9c-2.6-2.8-3.8-5.8-3.8-9S9.4 5.8 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>繁體中文</span></summary><nav><a href="../" hreflang="zh-Hans" lang="zh-Hans" data-l="zh">简体中文</a><a href="../hant/" hreflang="zh-Hant" lang="zh-Hant" data-l="hant" aria-current="page">繁體中文</a><a href="../en/" hreflang="en" lang="en" data-l="en">English</a><a href="../ja/" hreflang="ja" lang="ja" data-l="ja">日本語</a><a href="../ko/" hreflang="ko" lang="ko" data-l="ko">한국어</a><a href="../vi/" hreflang="vi" lang="vi" data-l="vi">Tiếng Việt</a><a href="../th/" hreflang="th" lang="th" data-l="th">ไทย</a><a href="../id/" hreflang="id" lang="id" data-l="id">Bahasa Indonesia</a><a href="../ms/" hreflang="ms" lang="ms" data-l="ms">Bahasa Melayu</a><a href="../es/" hreflang="es" lang="es" data-l="es">Español</a><a href="../fr/" hreflang="fr" lang="fr" data-l="fr">Français</a><a href="../de/" hreflang="de" lang="de" data-l="de">Deutsch</a><a href="../it/" hreflang="it" lang="it" data-l="it">Italiano</a><a href="../pt/" hreflang="pt" lang="pt" data-l="pt">Português</a></nav></details>
+</header>
+<main>
+<section class="hero">
+  <div class="txt">
+    <svg viewBox="0 0 200 200" width="96" height="96" class="mascot wave hero-pal" aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><g class="m-leg1"><rect x="58" y="104" width="16" height="70" rx="8" class="m-red" transform="rotate(10 66 104)"></rect></g><g class="m-leg2"><rect x="126" y="104" width="16" height="70" rx="8" class="m-red" transform="rotate(-10 134 104)"></rect></g><rect x="62" y="122" width="76" height="12" rx="6" class="m-rung"></rect><rect x="36" y="58" width="128" height="54" rx="18" class="m-red"></rect><rect x="44" y="64" width="112" height="6" rx="3" class="m-cut m-shine"></rect><ellipse class="m-cut m-blink" cx="80" cy="86" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="86" rx="6" ry="7"></ellipse><path d="M92 98q8 7 16 0" class="m-smile"></path><circle cx="64" cy="98" r="6" class="m-cheek"></circle><circle cx="136" cy="98" r="6" class="m-cheek"></circle></g></svg>
+    <h1>小板凳</h1>
+    <p class="tag">聽家裡的老人講過去</p>
+    <p class="lede">搬個小板凳，坐在老人身邊，聽他們講講過去。</p>
+    <span class="store soon"><svg class="apple" viewBox="0 0 384 512" width="18" height="22" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span>即將上架 App Store</span></span>
+    <p class="note">免費下載，沒有廣告</p>
+  </div>
+  <div class="pic"><img class="shot" src="../img/shots/hant/1.webp" width="500" height="1064" alt="聽家裡的老人 講講過去" fetchpriority="high"></div>
+</section>
+<p class="intro">小板凳幫你把家裡長輩的故事錄下來、存好，留給以後的家人聽。</p>
+<section class="feat">
+  <div class="txt">
+    <p class="eyebrow"><span class="no">01</span>錄下來</p>
+    <h2>按一下就開始錄</h2>
+    <p class="sub">鎖住螢幕也不會斷</p>
+    <ul><li>按一下就開始錄，螢幕鎖定也不會斷</li><li>不知道問什麼？近百個問題按話題分好：小時候、過年、老房子、怎麼認識的</li><li>講到要緊的地方標一下，以後一下就能找到</li><li>看著老照片講，照片和聲音存在一起</li><li>不想選問題也行，記下時間、地點和誰就好</li></ul>
+  </div>
+  <div class="pic"><img class="shot" src="../img/shots/hant/5.webp" width="500" height="1064" alt="按一下就開始錄 鎖住螢幕也不會斷" loading="lazy"></div>
+</section>
+<section class="feat flip">
+  <div class="txt">
+    <p class="eyebrow"><span class="no">02</span>一期一期存起來</p>
+    <h2>每段錄音</h2>
+    <p class="sub">都是一期家族日記</p>
+    <ul><li>每段錄音都是一期家族日記，有封面，有章節</li><li>時間線按年份排好，從爺爺奶奶小時候一直到現在</li><li>做成紀念冊 PDF，列印出來送給家人</li><li>封面風格隨你選：中國風、日式、海外</li></ul>
+  </div>
+  <div class="pic"><img class="shot" src="../img/shots/hant/2.webp" width="500" height="1064" alt="每段錄音 都是一期家族日記" loading="lazy"></div>
+</section>
+<section class="feat">
+  <div class="txt">
+    <p class="eyebrow"><span class="no">03</span>一棵自己家的家譜</p>
+    <h2>一棵自己家的家譜</h2>
+    <p class="sub">稱呼自動算好</p>
+    <ul><li>爸爸媽媽、堂表親、繼親、乾親都能加</li><li>稱呼自動算好，農曆生日到了會提醒你，也有粵語、閩南語叫法</li><li>家裡人可以一起編，改動由主管確認</li></ul>
+  </div>
+  <div class="pic"><img class="shot" src="../img/shots/hant/3.webp" width="500" height="1064" alt="一棵自己家的家譜 稱呼自動算好" loading="lazy"></div>
+</section>
+<section class="feat flip">
+  <div class="txt">
+    <p class="eyebrow"><span class="no">04</span>和家人一起</p>
+    <h2>全家一起</h2>
+    <p class="sub">長輩用大字版，按住照片就能說</p>
+    <ul><li>邀請家裡人加入，在家人留言裡互相說幾句</li><li>長輩掃一下QR 碼就能加入，不用註冊</li></ul>
+  </div>
+  <div class="pic"><img class="shot" src="../img/shots/hant/4.webp" width="500" height="1064" alt="全家一起 長輩用大字版，按住照片就能說" loading="lazy"></div>
+</section>
+<section class="feat plus">
+  <div class="txt">
+    <p class="eyebrow"><span class="no">05</span>小板凳 Plus（可選，一次買斷）</p>
+    <h2>這一年家裡講了什麼</h2>
+    <p class="sub">Plus：做成長圖和影片</p>
+    <ul><li>故事影片、更多家譜、全部封面、無損錄音等</li><li>一人購買，蘋果家人共享裡的家人（最多 6 人）都能用</li><li>邀請來的家人不用買，留言、一起編家譜、大字版都免費</li><li>現在免費的功能，以後也一直免費</li></ul>
+  </div>
+  <div class="pic"><img class="shot" src="../img/shots/hant/6.webp" width="500" height="1064" alt="這一年家裡講了什麼 Plus：做成長圖和影片" loading="lazy"></div>
+</section>
+<section class="own">
+  <div class="pic"><img class="shot" src="../img/shots/hant/7.webp" width="500" height="1064" alt="都存在你自己的 iCloud" loading="lazy"></div>
+  <div class="txt">
+    <h2>都存在你自己的 iCloud</h2>
+    <p>你的錄音只存在你自己的手機和 iCloud 裡，我們看不到，也不會拿去做別的事。</p><p>小板凳沒有廣告，以後也不會有。</p>
+  </div>
+</section>
+<section class="pals">
+  <h2>不同的家，不同的小板凳</h2>
+  <p class="sub">在 App 裡挑一個陪你的</p>
+  <div class="row"><span style="--d:0.00s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><g class="m-leg1"><rect x="58" y="104" width="16" height="70" rx="8" class="m-red" transform="rotate(10 66 104)"></rect></g><g class="m-leg2"><rect x="126" y="104" width="16" height="70" rx="8" class="m-red" transform="rotate(-10 134 104)"></rect></g><rect x="62" y="122" width="76" height="12" rx="6" class="m-rung"></rect><rect x="36" y="58" width="128" height="54" rx="18" class="m-red"></rect><rect x="44" y="64" width="112" height="6" rx="3" class="m-cut m-shine"></rect><ellipse class="m-cut m-blink" cx="80" cy="86" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="86" rx="6" ry="7"></ellipse><path d="M92 98q8 7 16 0" class="m-smile"></path><circle cx="64" cy="98" r="6" class="m-cheek"></circle><circle cx="136" cy="98" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:0.13s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><path d="M18 132 Q100 118 182 132 L182 158 Q100 176 18 158z" fill="#2d4558"></path><path d="M22 80 Q100 60 178 80 Q194 108 178 136 Q100 154 22 136 Q6 108 22 80z" fill="#3e5d74"></path><path d="M40 88 Q100 74 160 88" stroke="#fbf6ec" stroke-width="3" fill="none" stroke-dasharray="7 6" opacity=".7"></path><g class="m-red"><circle cx="20" cy="82" r="7"></circle><circle cx="180" cy="82" r="7"></circle><circle cx="18" cy="140" r="7"></circle><circle cx="182" cy="140" r="7"></circle></g><path d="M14 145 l-8 14 M186 145 l8 14" stroke="#c8302a" stroke-width="5" stroke-linecap="round"></path><ellipse class="m-cut m-blink" cx="80" cy="100" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="100" rx="6" ry="7"></ellipse><path d="M92 112q8 7 16 0" class="m-smile"></path><circle cx="64" cy="112" r="6" class="m-cheek"></circle><circle cx="136" cy="112" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:0.26s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><path d="M20 140 Q100 128 180 140 L180 162 Q100 176 20 162z" fill="#7a2f2a"></path><clipPath id="m-ko"><path d="M24 78 Q100 60 176 78 Q192 110 176 142 Q100 158 24 142 Q8 110 24 78z"></path></clipPath><g clip-path="url(#m-ko)"><rect x="8" y="50" width="31" height="120" fill="#d8433a"></rect><rect x="39" y="50" width="31" height="120" fill="#f2b233"></rect><rect x="70" y="50" width="31" height="120" fill="#3f8f5a"></rect><rect x="101" y="50" width="31" height="120" fill="#3d6fb4"></rect><rect x="132" y="50" width="31" height="120" fill="#e07aa6"></rect><rect x="163" y="50" width="31" height="120" fill="#d8433a"></rect></g><ellipse cx="100" cy="104" rx="46" ry="28" fill="#fbf6ec"></ellipse><ellipse class="m-cut m-blink" cx="80" cy="98" rx="6" ry="7" style="fill:#2b2420"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="98" rx="6" ry="7" style="fill:#2b2420"></ellipse><path d="M92 110q8 7 16 0" class="m-smile" style="stroke:#2b2420"></path><circle cx="64" cy="110" r="6" class="m-cheek"></circle><circle cx="136" cy="110" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:0.39s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><path d="M44 82 L28 172 H52 L62 108 H138 L148 172 H172 L156 82z" fill="#d42f2a"></path><rect x="34" y="60" width="132" height="28" rx="10" fill="#e23a30"></rect><g fill="#a82420"><circle cx="70" cy="74" r="4"></circle><circle cx="90" cy="74" r="4"></circle><circle cx="110" cy="74" r="4"></circle><circle cx="130" cy="74" r="4"></circle></g><rect x="72" y="118" width="56" height="36" rx="12" fill="#fbf6ec"></rect><ellipse class="m-cut m-blink" cx="80" cy="130" rx="6" ry="7" style="fill:#2b2420"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="130" rx="6" ry="7" style="fill:#2b2420"></ellipse><path d="M92 142q8 7 16 0" class="m-smile" style="stroke:#2b2420"></path><circle cx="64" cy="142" r="6" class="m-cheek"></circle><circle cx="136" cy="142" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:0.52s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><rect x="22" y="166" width="156" height="14" rx="6" fill="#7e2229"></rect><path d="M30 168 L100 44 L170 168z" fill="#b8323a" stroke="#e8b84a" stroke-width="6" stroke-linejoin="round"></path><path d="M56 150 L100 72 L144 150z" fill="none" stroke="#e8b84a" stroke-width="2" stroke-dasharray="6 5"></path><ellipse class="m-cut m-blink" cx="80" cy="124" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="124" rx="6" ry="7"></ellipse><path d="M92 136q8 7 16 0" class="m-smile"></path><circle cx="64" cy="136" r="6" class="m-cheek"></circle><circle cx="136" cy="136" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:0.65s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><rect x="42" y="100" width="14" height="74" rx="5" fill="#8a5a3b"></rect><rect x="144" y="100" width="14" height="74" rx="5" fill="#8a5a3b"></rect><rect x="50" y="138" width="100" height="10" rx="5" fill="#6e4630"></rect><rect x="26" y="96" width="148" height="16" rx="6" fill="#a8693c"></rect><rect x="32" y="58" width="136" height="42" rx="14" fill="#2f5b73"></rect><g fill="none" stroke="#f2c46b" stroke-width="2"><circle cx="44" cy="70" r="5"></circle><circle cx="58" cy="86" r="5"></circle><circle cx="142" cy="70" r="5"></circle><circle cx="156" cy="86" r="5"></circle><circle cx="44" cy="90" r="5"></circle><circle cx="156" cy="66" r="5"></circle></g><ellipse class="m-cut m-blink" cx="80" cy="80" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="80" rx="6" ry="7"></ellipse><path d="M92 92q8 7 16 0" class="m-smile"></path><circle cx="64" cy="92" r="6" class="m-cheek"></circle><circle cx="136" cy="92" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:0.78s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><g class="m-rock"><path d="M20 156 Q100 186 184 150" stroke="#8a5a3b" stroke-width="12" fill="none" stroke-linecap="round"></path><path d="M50 112 V164 M150 112 V164" stroke="#8a5a3b" stroke-width="12" stroke-linecap="round"></path><rect x="34" y="104" width="134" height="18" rx="8" fill="#8a5a3b"></rect><rect x="40" y="12" width="120" height="78" rx="22" fill="#b9773f"></rect><path d="M62 18 V86 M138 18 V86" stroke="#8a5a3b" stroke-width="3" opacity=".35"></path><rect x="40" y="96" width="122" height="14" rx="7" class="m-red"></rect><ellipse class="m-cut m-blink" cx="80" cy="46" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="46" rx="6" ry="7"></ellipse><path d="M92 58q8 7 16 0" class="m-smile"></path><circle cx="64" cy="58" r="6" class="m-cheek"></circle><circle cx="136" cy="58" r="6" class="m-cheek"></circle></g></g></svg></span><span style="--d:0.91s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><rect x="46" y="20" width="12" height="154" rx="6" fill="#7b4a2c"></rect><rect x="142" y="20" width="12" height="154" rx="6" fill="#7b4a2c"></rect><rect x="54" y="26" width="92" height="52" rx="10" fill="#e3b866"></rect><rect x="70" y="36" width="60" height="38" rx="12" fill="#f5e3bb"></rect><path d="M36 104 L164 104 L156 126 L44 126z" fill="#d9a84f"></path><path d="M48 106 l8 18 M60 106 l8 18 M72 106 l8 18 M84 106 l8 18 M96 106 l8 18 M108 106 l8 18 M120 106 l8 18 M132 106 l8 18 M144 106 l8 18" stroke="#b9852f" stroke-width="3"></path><rect x="50" y="150" width="100" height="8" rx="4" fill="#7b4a2c"></rect><ellipse class="m-cut m-blink" cx="80" cy="50" rx="6" ry="7" style="fill:#5a3420"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="50" rx="6" ry="7" style="fill:#5a3420"></ellipse><path d="M92 62q8 7 16 0" class="m-smile" style="stroke:#5a3420"></path><circle cx="64" cy="62" r="6" class="m-cheek"></circle><circle cx="136" cy="62" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:1.04s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><rect x="58" y="104" width="14" height="70" rx="6" fill="#9b6a3d" transform="rotate(8 65 104)"></rect><rect x="128" y="104" width="14" height="70" rx="6" fill="#9b6a3d" transform="rotate(-8 135 104)"></rect><rect x="44" y="98" width="112" height="12" rx="5" fill="#7b4a2c"></rect><rect x="36" y="58" width="128" height="44" rx="16" fill="#f8efe0"></rect><g fill="#c8302a" opacity=".55"><rect x="40" y="60" width="8" height="40"></rect><rect x="56" y="60" width="8" height="40"></rect><rect x="72" y="60" width="8" height="40"></rect><rect x="88" y="60" width="8" height="40"></rect><rect x="104" y="60" width="8" height="40"></rect><rect x="120" y="60" width="8" height="40"></rect><rect x="136" y="60" width="8" height="40"></rect><rect x="152" y="60" width="8" height="40"></rect><rect x="36" y="60" width="128" height="5"></rect><rect x="36" y="70" width="128" height="5"></rect><rect x="36" y="80" width="128" height="5"></rect><rect x="36" y="90" width="128" height="5"></rect></g><rect x="66" y="66" width="68" height="34" rx="12" fill="#f8efe0"></rect><ellipse class="m-cut m-blink" cx="80" cy="80" rx="6" ry="7" style="fill:#2b2420"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="80" rx="6" ry="7" style="fill:#2b2420"></ellipse><path d="M92 92q8 7 16 0" class="m-smile" style="stroke:#2b2420"></path><circle cx="64" cy="92" r="6" class="m-cheek"></circle><circle cx="136" cy="92" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:1.17s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><path d="M36 96 H70 V176 H36z M130 96 H164 V176 H130z" fill="#b9773f"></path><path d="M53 140 c-6 -8 -16 -2 -10 6 l10 10 l10 -10 c6 -8 -4 -14 -10 -6z M147 140 c-6 -8 -16 -2 -10 6 l10 10 l10 -10 c6 -8 -4 -14 -10 -6z" fill="#f5eee2"></path><rect x="24" y="66" width="152" height="34" rx="10" fill="#c98a4c"></rect><rect x="30" y="70" width="140" height="5" rx="2" fill="#e3b07a"></rect><ellipse class="m-cut m-blink" cx="80" cy="84" rx="6" ry="7" style="fill:#5a3420"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="84" rx="6" ry="7" style="fill:#5a3420"></ellipse><path d="M92 96q8 7 16 0" class="m-smile" style="stroke:#5a3420"></path><circle cx="64" cy="96" r="6" class="m-cheek"></circle><circle cx="136" cy="96" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:1.30s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><rect x="44" y="96" width="12" height="80" rx="5" fill="#2e6b4a"></rect><rect x="144" y="96" width="12" height="80" rx="5" fill="#2e6b4a"></rect><rect x="50" y="146" width="100" height="8" rx="4" fill="#2e6b4a"></rect><path d="M30 64 H170 L162 104 H38z" fill="#e2b85e"></path><path d="M30 64 L100 84 L170 64 M38 104 L100 84 L162 104" stroke="#c99a3e" stroke-width="3" fill="none"></path><ellipse class="m-cut m-blink" cx="80" cy="80" rx="6" ry="7" style="fill:#5a3420"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="80" rx="6" ry="7" style="fill:#5a3420"></ellipse><path d="M92 92q8 7 16 0" class="m-smile" style="stroke:#5a3420"></path><circle cx="64" cy="92" r="6" class="m-cheek"></circle><circle cx="136" cy="92" r="6" class="m-cheek"></circle></g></svg></span><span style="--d:1.43s"><svg viewBox="0 0 200 200" width="76" height="76" class="mascot wave " aria-hidden="true"><ellipse cx="100" cy="186" rx="56" ry="6" class="m-shadow"></ellipse><g class="m-body m-pp"><g class="m-rock"><path d="M10 40 L40 70 M190 40 L160 70" stroke="#7b4a2c" stroke-width="5" stroke-linecap="round"></path><path d="M36 66 Q100 190 164 66 Q100 120 36 66z" fill="#e8a33a"></path><path d="M44 78 Q100 168 156 78" stroke="#2f8f6a" stroke-width="7" fill="none"></path><path d="M52 92 Q100 160 148 92" stroke="#d8433a" stroke-width="6" fill="none"></path><path d="M60 104 Q100 152 140 104" stroke="#3d6fb4" stroke-width="5" fill="none"></path><ellipse class="m-cut m-blink" cx="80" cy="112" rx="6" ry="7"></ellipse><ellipse class="m-cut m-blink" cx="120" cy="112" rx="6" ry="7"></ellipse><path d="M92 124q8 7 16 0" class="m-smile"></path><circle cx="64" cy="124" r="6" class="m-cheek"></circle><circle cx="136" cy="124" r="6" class="m-cheek"></circle></g></g></svg></span></div>
+</section>
+<section class="end">
+  <span class="store soon"><svg class="apple" viewBox="0 0 384 512" width="18" height="22" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span>即將上架 App Store</span></span>
+  <p class="note">免費下載，沒有廣告</p>
+</section>
+</main>
+<footer>
+  <p>使用中遇到問題，或有任何建議，請寫信給我們。 <a href="mailto:contact@uzumea.com">contact@uzumea.com</a></p>
+  <p><a href="../privacy.html#hant">隱私說明</a> · <span>© 2026 小板凳 Kneehigh</span></p>
+  <nav class="flat"><a href="../" hreflang="zh-Hans" lang="zh-Hans" data-l="zh">简体中文</a><a href="../hant/" hreflang="zh-Hant" lang="zh-Hant" data-l="hant" aria-current="page">繁體中文</a><a href="../en/" hreflang="en" lang="en" data-l="en">English</a><a href="../ja/" hreflang="ja" lang="ja" data-l="ja">日本語</a><a href="../ko/" hreflang="ko" lang="ko" data-l="ko">한국어</a><a href="../vi/" hreflang="vi" lang="vi" data-l="vi">Tiếng Việt</a><a href="../th/" hreflang="th" lang="th" data-l="th">ไทย</a><a href="../id/" hreflang="id" lang="id" data-l="id">Bahasa Indonesia</a><a href="../ms/" hreflang="ms" lang="ms" data-l="ms">Bahasa Melayu</a><a href="../es/" hreflang="es" lang="es" data-l="es">Español</a><a href="../fr/" hreflang="fr" lang="fr" data-l="fr">Français</a><a href="../de/" hreflang="de" lang="de" data-l="de">Deutsch</a><a href="../it/" hreflang="it" lang="it" data-l="it">Italiano</a><a href="../pt/" hreflang="pt" lang="pt" data-l="pt">Português</a></nav>
+</footer>
+<script>document.querySelectorAll('[data-l]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('kh-lang',a.dataset.l)}catch(e){}})})</script>
+</body>
+</html>
